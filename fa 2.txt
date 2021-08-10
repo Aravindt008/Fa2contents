@@ -1,0 +1,38 @@
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+<dependency>
+    <groupId>org.javassist</groupId>
+    <artifactId>javassist</artifactId>
+    <version>3.25.0-GA</version>
+</dependency>
+
+
+
+for random port in eureka loadbalancing  
+
+server.port=${PORT:${SERVER_PORT:0}}
+
+
+
+zuul----for github ms properties [if eureka has 2 instances]      right click on ms..then
+
+eureka.instance.instance-id=${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+
+for unble to run webserver error in eureka...pom.xml
+
+<dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.javassist/javassist -->
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.25.0-GA</version>
+        </dependency>
